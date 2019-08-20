@@ -33,7 +33,7 @@ tar -xf v1.1.0.tar.gz; cd librdkafka-1.1.0; ./configure && make && make install;
 rm -f /usr/lib64/librdkafka*.so.1; cp /usr/local/lib/librdkafka*.so.1 /usr/lib64/; \
 echo "5. config php & nginx"; \
 groupadd -g 900 www; adduser --system --no-user-group -u 1000 -g www www; \
-sed -i 's/;date.timezone = /date.timezone = Asia\/Shanghai/g'           /etc/opt/remi/php73/php.ini; \
+sed -i 's/;date.timezone =/date.timezone = Asia\/Shanghai/g'            /etc/opt/remi/php73/php.ini; \
 sed -i 's/daemonize = yes/daemonize = no/g'                             /etc/opt/remi/php73/php-fpm.conf; \
 sed -i 's/user = apache/user = www/g'                                   /etc/opt/remi/php73/php-fpm.d/www.conf; \
 sed -i 's/group = apache/group = www/g'                                 /etc/opt/remi/php73/php-fpm.d/www.conf; \
