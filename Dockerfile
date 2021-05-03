@@ -28,8 +28,8 @@ tar -xf hiredis-v0.13.3.tar.gz; cd hiredis-0.13.3; make && make install; \
 cd /tmp/build; wget https://github.com/nrk/phpiredis/archive/v1.0.0.tar.gz -O phpiredis-v1.0.0.tar.gz; \
 tar -xf phpiredis-v1.0.0.tar.gz; cd phpiredis-1.0.0; phpize; ./configure --enable-phpiredis; make && make install; \
 echo 'extension=phpiredis.so' >> /etc/opt/remi/php73/php.ini; \
-cd /tmp/build; wget https://github.com/edenhill/librdkafka/archive/v1.1.0.tar.gz; \
-tar -xf v1.1.0.tar.gz; cd librdkafka-1.1.0; ./configure && make && make install; \
+cd /tmp/build; wget https://github.com/edenhill/librdkafka/archive/v1.6.1.tar.gz; \
+tar -xf v1.6.1.tar.gz; cd librdkafka-1.6.1; ./configure && make && make install; \
 rm -f /usr/lib64/librdkafka*.so.1; cp /usr/local/lib/librdkafka*.so.1 /usr/lib64/; \
 echo "5. config php & nginx"; \
 groupadd -g 900 www; adduser --system --no-user-group -u 1000 -g www www; \
