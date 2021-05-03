@@ -17,7 +17,7 @@ yum install -y gcc wget curl nginx php73 php73-php-cli php73-php-fpm php73-php-m
     php73-php-mbstring php73-php-curl php73-php-xml php73-php-pear \
     php73-php-bcmath php73-php-json php73-php-common php73-php-opcache \
     php73-php-mysql php73-php-odbc php73-php-pecl-memcached \
-    php73-php-pecl-redis php73-php-pecl-rdkafka php73-php-pdo \
+    php73-php-pecl-redis php73-php-pecl-rdkafka4 php73-php-pdo \
     php73-php-pecl-apcu php73-php-pecl-apcu-bc; \
 ln -svf /opt/remi/php73/root/usr/bin/* /usr/bin/; \
 ln -svf /opt/remi/php73/root/usr/sbin/* /usr/sbin/; \
